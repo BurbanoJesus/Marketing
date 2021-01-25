@@ -1,0 +1,68 @@
+/*---------------------*/
+/*-------BOTONES-------*/
+/*---------------------*/
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main_b);
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    padding: 0 28px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    -webkit-appearance: none;
+    border: 2px solid #FFF;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.button.btn_outline,
+.button.btn_outline
+{
+    background: transparent;
+    border-color: var(--main_b);
+    color: #FFF;
+    /*color: var(--main_b);*/
+}
+
+.button:active,
+.button:hover
+{
+    background: #B78245;
+    /*border-color: var(--main_b);*/
+    color: #FCEBE0;
+}
+
+.button.btn_outline:active,
+.button.btn_outline:hover
+{
+    background: var(--main_b);
+    border-color: #FFF;
+    color: #FFF;
+}
+
+.button:active svg,
+.button:hover svg{
+    fill: #FCEBE0;
+}
+
+button.button svg,
+a.button svg,
+label.button svg
+{
+    width: 16px;
+    min-width: 16px;
+    margin-right: 8px;
+    fill: #FFF;
+    transition: all .4s ease;
+}
+
+.button.btn_inline,
+.button.btn_inline
+{
+    margin-right: 12px;
+}

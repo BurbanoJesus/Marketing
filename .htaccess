@@ -1,0 +1,21 @@
+Options -Indexes
+#DirectoryIndex views/inicio/inicio.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /marketing/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteRule ^(.*)$ views/inicio/$1 [L]
+#RewriteRule ^(.*)$ $1.php [L]
+
+RewriteRule ^(inicio)$ views/inicio/$1.php [L]
+RewriteRule ^(acerca)$ views/inicio/$1.php [L]
+RewriteRule ^(servicios)$ views/inicio/$1.php [L]
+RewriteRule ^(contacto)$ views/inicio/$1.php [L]
+RewriteRule ^(terminos_condiciones)$ views/about/$1.php [L]
+#RewriteRule ^(preguntas_frecuentes)$ views/about/$1.php [L]
+RewriteRule ^(success)$ views/inicio/$1.php [L]
+
+
+</IfModule>
